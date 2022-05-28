@@ -1,5 +1,7 @@
 
-number_of_primes = 0
+import math
+number_of_primes = 1
+sum_of_log = 0
 
 def itsPrimef(current_number):
     current_prime = 2
@@ -10,6 +12,8 @@ def itsPrimef(current_number):
         prime = current_number
         global number_of_primes
         number_of_primes = number_of_primes + 1
+        global sum_of_log
+        sum_of_log = math.log(prime) + sum_of_log
 def biggest_primef(x):
     current_number = 1
     while current_number != x:
@@ -23,6 +27,10 @@ def number_of_primesf(number):
     return number_of_primes 
 
 number = int(input("This program calculate the bigger prime near an aleatory number. Type a number. "))
-number_of_primesf(number)
-print(prime)
+if number >= 1:
+    number_of_primesf(number)
+    print(number_of_primes)
+    print(sum_of_log/number)
+if number <= 0:
+    print("0")
 
