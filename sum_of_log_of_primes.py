@@ -26,11 +26,11 @@ def number_of_primesf(number):
     biggest_primef(number)
     return number_of_primes 
 
-number = int(input("This program calculate the bigger prime near an aleatory number. Type a number. "))
+number = int(input("This program calculate the sum of log of all primes near an aleatory number, and the ratio between this elements. Type a number. "))
 if number >= 1:
     number_of_primesf(number)
-    print(number_of_primes)
-    print(sum_of_log/number)
+    print("Number of primes", number_of_primes)
+    print("Ratio between the number and the sum of logarithms of a prime", sum_of_log/number)
 if number <= 0:
     print("0")
 

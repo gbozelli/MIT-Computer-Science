@@ -22,7 +22,7 @@ def number_of_primesf(number):
     biggest_primef(number)
     return number_of_primes 
 
-number = int(input("This program calculate the bigger prime near an aleatory number. Type a number. "))
+number = int(input("This program calculate the biggest prime near an aleatory number. Type a number. "))
 number_of_primesf(number)
 print(prime)
 
